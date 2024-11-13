@@ -24573,6 +24573,8 @@ span.product-remove:after {
   list-style-type: none;
   padding: unset;
   margin: unset;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .u-calendar .u-calendar-time-container ul.u-calendar-time-list.disabled {
   pointer-events: none;
@@ -45640,7 +45642,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: 128px 15px 0 auto;
+  margin: 128px 29px 0 auto;
 }
 
 .u-header .u-nav-1 {
@@ -45677,6 +45679,10 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 1399px) {
   .u-header .u-sheet-1 {
     min-height: 207px;
+  }
+
+  .u-header .u-menu-1 {
+    margin-right: 29px;
   }
 
   .u-header .u-text-1 {
@@ -45726,13 +45732,13 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-text-1 {
-    margin-top: -68px;
+    margin-top: -69px;
     margin-right: 392px;
   }
 
   .u-header .u-text-2 {
     margin-top: 10px;
-    margin-right: auto;
+    margin-right: 144px;
     margin-bottom: 4px;
   }
 }
@@ -45752,6 +45758,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-text-2 {
     font-size: 1rem;
+    margin-right: 94px;
     margin-bottom: 4px;
   }
 }
@@ -45778,6 +45785,7 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-text-2 {
     font-size: 0.875rem;
     margin-top: 7px;
+    margin-right: 46px;
     margin-bottom: 6px;
   }
 }
