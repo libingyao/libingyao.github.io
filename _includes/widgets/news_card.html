@@ -1,0 +1,37 @@
+<style>
+  /* 默认左边距为 30px */
+  .news-ul {
+    list-style: none;
+    margin: 0 30px;
+    padding: 0;
+  }
+  /* 当屏幕宽度小于 768px（手机）时，左边距改为 10px */
+  @media (max-width: 767.98px) {
+    .news-ul {
+      margin: 0 8px;
+    }
+  }
+</style>
+
+<div class="my-3 bg-white shadow-sm rounded-sm">
+  <h6 class="p-3 mb-2 border-bottom border-gray" style="font-size: 1.25rem;"><i class="fas fa-rss"></i> News</h6>
+  <!-- 将 news 按日期降序排列 -->
+  {% assign news_sorted = site.news | sort: "date" | reverse %}
+  <div class="px-3 pb-3">
+    <!-- 使用自定义类来控制边距 -->
+    <ul class="news-ul">
+      {% for item in news_sorted %}
+        <li style="margin-bottom: -3px; padding: 5px 0; display: flex;">
+          <!-- 日期（MM/YYYY） -->
+          <span style="flex: 0 0 70px; font-weight: 500; margin-right: 10px; font-size: 0.95rem;">
+            {{ item.date | date: "%m/%Y" }}
+          </span>
+          <!-- 标题或正文 -->
+          <span style="flex: 1; font-size: 0.97rem;">
+            {{ item.title }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

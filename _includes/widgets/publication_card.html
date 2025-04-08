@@ -1,0 +1,77 @@
+<style>
+  /* Flexbox 容器 */
+  .publication-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* 设置左右间隔为 1rem，根据需要调整 */
+    /*border-bottom: 1px solid #ccc; /* 模拟 border-gray */
+/*    border-bottom: 1px;*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 1px 3px rgba(0,0,0,0.1);*/
+/*    border-radius: 0.25rem;*/
+/*    margin: 0.5rem 0;*/
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; 
+  }
+  /* 左侧区域，自适应内容宽度，允许换行 */
+  .publication-left {
+    margin-left: 33px;
+/*    padding: 1rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    width: 100px;  
+    text-align: center;
+    flex-wrap: wrap;
+    white-space: normal;
+    align-content: center;
+  }
+  /* 右侧区域占据剩余空间 */
+  .publication-right {
+    flex: 1;
+/*    padding: 1rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+   /* 去掉最后一项的下边框 */
+  .publication-container:last-child {
+    padding-bottom: 2rem;
+  }
+  .publication-container:first-of-type {
+    padding-top: 0.7rem;
+  }
+  /* 小屏幕下，调整左侧外边距，并限制宽度强制换行 */
+  @media (max-width: 767.98px) {
+    .publication-left {
+      margin-left: 5px;
+      margin-bottom: 15px;
+      max-width: 72px;  /* 固定最大宽度，根据需要调整数值 */
+    }
+    .publication-right {
+      margin-bottom: 15px;
+      margin-right: 10px;
+    }
+    .publication-container:first-of-type {
+      padding-top: 0.7rem;
+    }
+    .publication-container {
+    gap: 1rem; /* 设置左右间隔为 1rem，根据需要调整 */
+  }
+  }
+</style>
+
+{% assign publications = include.publications %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+    <h6 class="border-bottom border-gray p-3 mb-0" style="font-size: 1.25rem;">
+        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
+        <a href="{{ 'publications' | relative_url }}" style="color: #76aad9;" class="no-underline enlarge-icon"> (view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item first=false last=false show_icon=false %}    
+    {% endfor %}
+    <!-- <h6 class="d-block p-3 mt-0 text-right">
+        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
+    </h6> -->
+</div>
