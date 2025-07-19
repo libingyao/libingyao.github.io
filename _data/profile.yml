@@ -1,6 +1,6 @@
 # primary_name: "Bingyao Li 「李冰瑶」"
 #secondary_name: "Assistant Professor in UC Riverside"
-navbar_name: "Bingyao Li 「李冰瑶」<br><small>Incoming Assistant Professor in UC Riverside</small>"
+navbar_name: "Bingyao Li 「李冰瑶」<br><small>Assistant Professor in UC Riverside</small>"
 
 # positions:
 # - logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
@@ -20,17 +20,17 @@ cv_link: /assets/files/LBY_CV.pdf
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi! I am currently a final-year Ph.D. student in Department of Computer Science at University of Pittsburgh, advised by <a href="http://xzt102.github.io/" style="color: inherit;" 
+    Hi! I am an Assistant Professor in the <a href="https://www1.cs.ucr.edu/" style="font-weight: bold; color: inherit;" 
    onmouseover="this.style.color='#76aad9';" 
-   onmouseout="this.style.color='inherit';">Dr. Xulong Tang</a>. I received my B.E. and M.S. degree from the College of Intelligence and Computing, Tianjin University in 2017 and 2020, respectively. </p>
+   onmouseout="this.style.color='inherit';">Department of Computer Science and Engineering, University of California, Riverside. I received my Ph.D. in Department of Computer Science from University of Pittsburgh, where I was advised by <a href="http://xzt102.github.io/" style="color: inherit;" 
+   onmouseover="this.style.color='#76aad9';" 
+   onmouseout="this.style.color='inherit';">Dr. Xulong Tang</a>. I earned my B.E. and M.S. degree from the College of Intelligence and Computing at Tianjin University in 2017 and 2020, respectively. </p>
   <p>
     My research interests lie broadly in <span style="font-weight: bold;" >advanced computer architectures</span>, <span style="font-weight: bold;">high-performance computing systems</span>, and <span style="font-weight: bold;">emerging parallel applications</span>, with a specific focus on GPU ecosystem from architecture to application. My work aims to design architectures and system features for next-generation GPU systems, enabling and supporting emerging large-scale applications on both single- and multi-GPU platforms. I am also actively working on system-level optimizations for <span style="font-weight: 700;">large language models serving</span>.
   </p>
 
   <div class="bg-light p-3 mt-4" style="color: #db535a;">
-    <em>I will be joining the <a href="https://www1.cs.ucr.edu/" style="font-weight: bold; color: inherit;" 
-   onmouseover="this.style.color='#76aad9';" 
-   onmouseout="this.style.color='inherit';">Computer Science and Engineering Department of UC Riverside</a> as a tenure-track assistant professor in Fall 2025. I am looking for multiple self-motivated PhD students to start in Winter/Spring/Fall 2026.</em>
+    <em><strong>Prospective Students:</strong>P: I am looking for multiple self-motivated Ph.D. students to start in Winter/Spring/Fall 2026.</em>
   </div>
 
 portrait_url: /assets/images/photos/photo.png

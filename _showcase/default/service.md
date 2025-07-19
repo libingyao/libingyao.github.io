@@ -16,8 +16,16 @@ date: 2024-01-01
 <div class="white-box">
   <h5>Services</h5>
   <hr />
-  <h6>Reviewer</h6>
+  <h6>Orgnization Committee</h6>
   <ul class="custom-bullet">
+    <li>Publication chair of ASPLOS 2026</li>
+  </ul>
+
+  <h6>Program Committee</h6>
+  <ul class="custom-bullet">
+    <li>HPCA 2026</li>
+    <li>ICCAD 2025</li>
+    <li>IISWC 2025</li>
     <li>ICLR 2025</li>
   </ul>
 
