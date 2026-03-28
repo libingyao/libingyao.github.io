@@ -9,5 +9,5 @@ show_icon:      false
 
 
 authors:
-  - <strong><u>Bingyao Li</u></strong>s
+  - <strong><u>Bingyao Li</u></strong>
 ---
