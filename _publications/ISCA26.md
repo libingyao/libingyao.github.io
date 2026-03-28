@@ -8,5 +8,4 @@ pub_date:       "2026"
 
 
 authors:
-  - <strong><u>Bingyao Li</u></strong>
----
+  - <strong><u>Bingyao Li</u></strong>s
