@@ -25,7 +25,7 @@ date: 2026-01-01
 </style>
 
 <div class="white-box">
-  <h5>Course Teaching</h5>
+  <h5 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Course Teaching</h5>
   <hr />
   <table class="teaching-table">
     <tr>
