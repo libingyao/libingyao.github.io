@@ -37,7 +37,7 @@ date: 2024-01-01
 </style>
 
 <div class="white-box">
-  <h5 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Professional Services</h5>
+  <h5 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Professional Services</h5>
   <hr style="margin-top: 0;" />
 
   <div class="service-section">
