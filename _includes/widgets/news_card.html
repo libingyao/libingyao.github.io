@@ -1,37 +1,100 @@
 <style>
-  /* 默认左边距为 30px */
   .news-ul {
     list-style: none;
     margin: 0 30px;
     padding: 0;
   }
-  /* 当屏幕宽度小于 768px（手机）时，左边距改为 10px */
   @media (max-width: 767.98px) {
     .news-ul {
       margin: 0 8px;
     }
   }
+  .news-toggle-btn {
+    background: none;
+    border: none;
+    color: #6c757d;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .news-toggle-btn:hover {
+    color: #343a40;
+  }
+  .news-toggle-btn .toggle-icon {
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+  .news-toggle-btn.expanded .toggle-icon {
+    transform: rotate(180deg);
+  }
+  #older-news {
+    display: none;
+  }
+  #older-news.show {
+    display: block;
+  }
 </style>
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
   <h6 class="p-3 mb-2 border-bottom border-gray" style="font-size: 1.25rem;"><i class="fas fa-rss"></i> News</h6>
-  <!-- 将 news 按日期降序排列 -->
   {% assign news_sorted = site.news | sort: "date" | reverse %}
+  {% assign recent_news = news_sorted | where_exp: "item", "item.date >= '2024-01-01'" %}
+  {% assign older_news = news_sorted | where_exp: "item", "item.date < '2024-01-01'" %}
   <div class="px-3 pb-3">
-    <!-- 使用自定义类来控制边距 -->
     <ul class="news-ul">
-      {% for item in news_sorted %}
+      {% for item in recent_news %}
         <li style="margin-bottom: -3px; padding: 5px 0; display: flex;">
-          <!-- 日期（MM/YYYY） -->
           <span style="flex: 0 0 70px; font-weight: 500; margin-right: 10px; font-size: 0.95rem;">
             {{ item.date | date: "%m/%Y" }}
           </span>
-          <!-- 标题或正文 -->
           <span style="flex: 1; font-size: 0.97rem;">
             {{ item.title }}
           </span>
         </li>
       {% endfor %}
     </ul>
+
+    {% if older_news.size > 0 %}
+      <div style="margin: 6px 30px 0;">
+        <button class="news-toggle-btn" onclick="toggleOlderNews(this)" aria-expanded="false">
+          <span class="toggle-icon">&#9660;</span>
+          <span class="btn-label">Show {{ older_news.size }} older news</span>
+        </button>
+      </div>
+      <ul class="news-ul" id="older-news">
+        {% for item in older_news %}
+          <li style="margin-bottom: -3px; padding: 5px 0; display: flex;">
+            <span style="flex: 0 0 70px; font-weight: 500; margin-right: 10px; font-size: 0.95rem;">
+              {{ item.date | date: "%m/%Y" }}
+            </span>
+            <span style="flex: 1; font-size: 0.97rem;">
+              {{ item.title }}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </div>
+
+<script>
+function toggleOlderNews(btn) {
+  var panel = document.getElementById('older-news');
+  var label = btn.querySelector('.btn-label');
+  var expanded = btn.getAttribute('aria-expanded') === 'true';
+  if (expanded) {
+    panel.classList.remove('show');
+    btn.classList.remove('expanded');
+    btn.setAttribute('aria-expanded', 'false');
+    label.textContent = 'Show {{ older_news.size }} older news';
+  } else {
+    panel.classList.add('show');
+    btn.classList.add('expanded');
+    btn.setAttribute('aria-expanded', 'true');
+    label.textContent = 'Hide older news';
+  }
+}
+</script>
