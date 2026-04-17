@@ -25,7 +25,7 @@ date: 2024-01-01
 
   <h6>Program Committee</h6>
   <ul class="custom-bullet">
-    <li>The International Symposium on Microarchitecture (MICRO 2026)
+    <li>The International Symposium on Microarchitecture (MICRO 2026)</li>
     <li>The International Symposium on Computer Architecture (ISCA 2026)</li>
     <li>The International Symposium on High-Performance Computer Architecture (HPCA 2026)</li>
     <li>The International Conference on Computer-Aided Design (ICCAD 2025, 2026)</li>

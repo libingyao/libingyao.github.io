@@ -21,7 +21,6 @@ navbar_title: Activities
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-  <h1>{{ group.name }}</h1>
   <div class="mb-4">
     {% for item in group.items %}
       <div class="my-3 bg-white shadow-sm rounded-sm">

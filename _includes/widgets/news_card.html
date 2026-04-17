@@ -69,7 +69,7 @@
       <div style="margin: 6px 30px 0;">
         <button class="news-toggle-btn" onclick="toggleOlderNews(this)" aria-expanded="false">
           <span class="toggle-icon">&#9660;</span>
-          <span class="btn-label">Show {{ older_count }} older news</span>
+          <span class="btn-label">Show older news</span>
         </button>
       </div>
       <ul class="news-ul" id="older-news">
@@ -100,7 +100,7 @@ function toggleOlderNews(btn) {
     panel.classList.remove('show');
     btn.classList.remove('expanded');
     btn.setAttribute('aria-expanded', 'false');
-    label.textContent = 'Show {{ older_count }} older news';
+    label.textContent = 'Show older news';
   } else {
     panel.classList.add('show');
     btn.classList.add('expanded');
