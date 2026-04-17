@@ -1,12 +1,12 @@
 <style>
   .news-ul {
     list-style: none;
-    margin: 0 30px;
+    margin: 0 1rem;
     padding: 0;
   }
   @media (max-width: 767.98px) {
     .news-ul {
-      margin: 0 8px;
+      margin: 0 0.5rem;
     }
   }
   .news-toggle-btn {
@@ -48,7 +48,7 @@
       {% assign older_count = older_count | plus: 1 %}
     {% endif %}
   {% endfor %}
-  <div class="px-3 pb-3">
+  <div class="pb-3">
     <ul class="news-ul">
       {% for item in news_sorted %}
         {% assign item_year = item.date | date: "%Y" %}
@@ -66,7 +66,7 @@
     </ul>
 
     {% if older_count > 0 %}
-      <div style="margin: 6px 30px 0;">
+      <div style="margin: 6px 1rem 0;">
         <button class="news-toggle-btn" onclick="toggleOlderNews(this)" aria-expanded="false">
           <span class="toggle-icon">&#9660;</span>
           <span class="btn-label">Show older news</span>
