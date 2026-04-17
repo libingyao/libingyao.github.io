@@ -39,7 +39,7 @@
 </style>
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
-  <h6 class="p-3 mb-2 border-bottom border-gray" style="font-size: 1.25rem;">Updates</h6>
+  <h6 class="mb-2 border-bottom border-gray" style="font-size: 1.25rem; padding: 0.75rem 1rem 0.75rem 3rem;">Updates</h6>
   {% assign news_sorted = site.news | sort: "date" | reverse %}
   {% assign older_count = 0 %}
   {% for item in news_sorted %}
@@ -48,8 +48,8 @@
       {% assign older_count = older_count | plus: 1 %}
     {% endif %}
   {% endfor %}
-  <div class="pb-3">
-    <ul class="news-ul">
+  <div class="pb-3" style="padding-left: 3rem;">
+    <ul class="news-ul" style="margin: 0;">
       {% for item in news_sorted %}
         {% assign item_year = item.date | date: "%Y" %}
         {% if item_year >= "2024" %}
@@ -66,13 +66,13 @@
     </ul>
 
     {% if older_count > 0 %}
-      <div style="margin: 6px 1rem 0;">
+      <div style="margin: 6px 0 0;">
         <button class="news-toggle-btn" onclick="toggleOlderNews(this)" aria-expanded="false">
           <span class="toggle-icon">&#9660;</span>
           <span class="btn-label">Show older news</span>
         </button>
       </div>
-      <ul class="news-ul" id="older-news">
+      <ul class="news-ul" id="older-news" style="margin: 0;">
         {% for item in news_sorted %}
           {% assign item_year = item.date | date: "%Y" %}
           {% if item_year < "2024" %}
