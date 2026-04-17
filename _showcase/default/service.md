@@ -61,7 +61,7 @@ date: 2024-01-01
   </div>
 
   <div class="service-section">
-    <h6>Reviewer</h6>
+    <h6>Journal Reviewer</h6>
     <ul class="service-list">
       <li>IEEE Transactions on Computers (TC)</li>
       <li>ACM Transactions on Architecture and Code Optimization (TACO)</li>

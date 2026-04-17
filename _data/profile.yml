@@ -37,7 +37,7 @@ short_bio: >-
   </p>
 
   <p>
-    My research spans advanced computer architectures, high-performance computing, and emerging parallel applications, with a particular emphasis on the <strong>GPU ecosystem</strong> from architecture to application. I design architectures and system features for next-generation GPU platforms, enabling and supporting emerging large-scale applications on both single- and multi-GPU platforms. I am also actively working on system-level optimizations for <strong>large language model serving</strong>.
+    My research spans advanced computer architectures, high-performance computing, and emerging parallel applications, with a particular emphasis on the <strong>GPU ecosystem</strong> from architecture to application. I design architectures and system features for next-generation GPU platforms, enabling and supporting emerging large-scale applications on both single- and multi-GPU platforms. I am also actively working on building high-performance <strong>LLM infrastructure and systems</strong>.
   </p>
 
   <p style="background-color: #f8f9fa; padding: 12px; margin-top: 24px; color: #db535a;">
