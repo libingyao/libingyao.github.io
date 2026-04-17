@@ -51,31 +51,23 @@ date: 2024-01-01
   <div class="service-section">
     <h6>Program Committee</h6>
     <ul class="service-list">
-      <li>The International Symposium on Microarchitecture (MICRO 2026)</li>
-      <li>The International Symposium on Computer Architecture (ISCA 2026)</li>
-      <li>The International Symposium on High-Performance Computer Architecture (HPCA 2026)</li>
-      <li>The International Conference on Computer-Aided Design (ICCAD 2025, 2026)</li>
-      <li>IEEE International Symposium on Workload Characterization (IISWC 2025, 2026)</li>
+      <li>MICRO 2026</li>
+      <li>ISCA 2026</li>
+      <li>HPCA 2026</li>
+      <li>ICCAD 2025, 2026</li>
+      <li>IISWC 2025, 2026</li>
+      <li>ICLR 2025</li>
     </ul>
   </div>
 
   <div class="service-section">
     <h6>Reviewer</h6>
     <ul class="service-list">
-      <li>The International Conference on Learning Representations (ICLR 2025)</li>
       <li>IEEE Transactions on Computers (TC)</li>
       <li>ACM Transactions on Architecture and Code Optimization (TACO)</li>
       <li>Transactions on Cloud Computing (TCC)</li>
       <li>Journal of Systems Architecture (JSA)</li>
       <li>Journal of Combinatorial Optimization (JOCO)</li>
-    </ul>
-  </div>
-
-  <div class="service-section">
-    <h6>Artifact Evaluation Committee</h6>
-    <ul class="service-list">
-      <li>IEEE/ACM International Symposium on Microarchitecture (MICRO 2024, 2022)</li>
-      <li>ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2023)</li>
     </ul>
   </div>
 </div>
